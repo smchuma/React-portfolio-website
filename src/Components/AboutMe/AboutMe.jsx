@@ -1,7 +1,8 @@
 import React from "react";
+import "./AboutMe.scss";
 
 const AboutMe = () => {
-  return <div>AboutMe</div>;
+  return <div className="about"></div>;
 };
 
 export default AboutMe;

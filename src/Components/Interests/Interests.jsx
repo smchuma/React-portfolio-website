@@ -1,7 +1,8 @@
 import React from "react";
+import "./Interests.scss";
 
 const Interests = () => {
-  return <div>Interests</div>;
+  return <div className="interests">Interests</div>;
 };
 
 export default Interests;
