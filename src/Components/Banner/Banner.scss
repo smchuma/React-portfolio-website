@@ -1,3 +1,13 @@
+@import "../../SCSS/global.scss";
+
 .banner {
-  background-color: blue;
+  background-color: $secondary-color;
+  display: flex;
+
+  .left {
+    flex: 0.5;
+  }
+  .right {
+    flex: 0.5;
+  }
 }
