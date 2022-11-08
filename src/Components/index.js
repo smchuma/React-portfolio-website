@@ -6,3 +6,4 @@ export { default as Works } from "./Works/Works";
 export { default as Interests } from "./Interests/Interests";
 export { default as Testimonials } from "./Testimonials/Testimonials";
 export { default as Contact } from "./Contact/Contact";
+export { default as Menu } from "./Menu/Menu";
