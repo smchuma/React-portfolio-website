@@ -1,7 +1,7 @@
 @import "../../SCSS/global.scss";
 
 .banner {
-  background-color: $secondary-color;
+  background-image: radial-gradient(#424656, $secondary-color);
   display: flex;
 
   .left {
@@ -73,33 +73,62 @@
     flex: 0.5;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     color: white;
     text-align: center;
 
     .titles {
+      margin-top: 200px;
+      h2 {
+        color: rgb(255, 101, 101);
+      }
+      h1 {
+        font-size: 50px;
+        font-weight: 700;
+      }
+      h3 {
+        font-size: 30px;
+        font-weight: 500;
+      }
+    }
+    .buttons {
+      margin-top: 20px;
+
+      .btn {
+        width: 200px;
+        margin-left: 20px;
+        color: white;
+        background: transparent;
+        border: 1px solid white;
+        padding: 12px;
+        border-radius: 20px;
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
     }
   }
 }
 
-.custom-shape-divider-bottom-1668004751 {
+.custom-shape-divider-bottom-1668009551 {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
   overflow: hidden;
   line-height: 0;
-  transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1668004751 svg {
+.custom-shape-divider-bottom-1668009551 svg {
   position: relative;
   display: block;
-  width: calc(100% + 1.3px);
-  height: 150px;
+  width: calc(110% + 1.3px);
+  height: 188px;
 }
 
-.custom-shape-divider-bottom-1668004751 .shape-fill {
+.custom-shape-divider-bottom-1668009551 .shape-fill {
   fill: #ffffff;
 }
