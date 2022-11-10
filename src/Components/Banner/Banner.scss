@@ -1,7 +1,7 @@
 @import "../../SCSS/global.scss";
 
 .banner {
-  background-image: radial-gradient(#424656, $secondary-color);
+  background-image: radial-gradient(#595e73, $secondary-color);
   display: flex;
 
   .left {
@@ -111,24 +111,23 @@
       }
     }
   }
-}
+  .custom-shape-divider-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
 
-.custom-shape-divider-bottom-1668009551 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
+  .custom-shape-divider-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(110% + 1.3px);
+    height: 188px;
+  }
 
-.custom-shape-divider-bottom-1668009551 svg {
-  position: relative;
-  display: block;
-  width: calc(110% + 1.3px);
-  height: 188px;
-}
-
-.custom-shape-divider-bottom-1668009551 .shape-fill {
-  fill: #ffffff;
+  .custom-shape-divider-bottom .shape-fill {
+    fill: #ffffff;
+  }
 }
