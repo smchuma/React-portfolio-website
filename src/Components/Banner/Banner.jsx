@@ -37,9 +37,17 @@ const Banner = () => {
                 "Software Developer ",
                 2000,
                 "HTML5/CCS3/JavaScript",
-                3000,
+                2000,
                 "React / Redux",
-                4000,
+                2000,
+                "Node.js / Express",
+                2000,
+                "Sass / Material UI",
+                2000,
+                "MongoDB / MySQL",
+                2000,
+                "Git / GitHub",
+                2000,
               ]}
               loop={Infinity}
               wrapper="p"
