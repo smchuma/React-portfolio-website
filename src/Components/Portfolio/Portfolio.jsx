@@ -1,19 +1,32 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Portfolio.scss";
 import crypto from "../../images/crypto.png";
 import neon from "../../images/neon.png";
 import emp from "../../images/emp.png";
 import zenku from "../../images/zenku.png";
+import { PortfolioList } from "../../Components";
 
 const Portfolio = () => {
+  const [selected, setSelected] = useState("web");
+  const list = [
+    {
+      id: "web",
+      title: "Web App",
+    },
+  ];
   return (
     <div className="portfolio" id="portfolio">
       <h1>Portfolio</h1>
       <ul>
-        <li className="active">Featured</li>
-        <li>Web App</li>
-        <li>Mobile App</li>
-        <li>UX/UI Designs</li>
+        {list.map((item) => (
+          <PortfolioList
+            key={item.id}
+            title={item.title}
+            active={selected === item.id}
+            setSelected={setSelected}
+            id={item.id}
+          />
+        ))}
       </ul>
       <div className="container">
         <div className="item">
@@ -51,7 +64,7 @@ const Portfolio = () => {
           <h3>Employees Tasks Web App</h3>
           <div className="buttons">
             <a
-              href="https://github.com/smchuma/EmployeesTasksWebApp-API"
+              href="https://github.com/smchuma/EmployeesTasksWebApp"
               target="blank"
             >
               <button className="btn">GITHUB</button>
