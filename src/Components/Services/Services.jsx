@@ -1,27 +1,14 @@
 import React from "react";
 import "./Services.scss";
+import {
+  development,
+  illustration,
+  production,
+} from "../../Components/Services/data";
 
 const Services = () => {
-  const items = [
-    {
-      id: 1,
-      title: " HTML/CSS",
-    },
-    {
-      id: 2,
-      title: " JavaScript",
-    },
-    {
-      id: 3,
-      title: " React / Redux",
-    },
-    {
-      id: 4,
-      title: " HTML/CSS",
-    },
-  ];
   return (
-    <div className="services" id="Services">
+    <div className="services" id="services">
       <h1>My Services</h1>
       <div className="wrapper">
         <div className="first">
@@ -29,43 +16,43 @@ const Services = () => {
             <img src="assets/web.png" alt="web" />
             <h2>Development</h2>
             <ul>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                HTML/CSS
-              </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                JavaScript
-              </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                React / Redux
-              </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Node / Express
-              </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Material UI
-              </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                MySQL
-              </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                MongoDB
-              </li>
-              <li>
-                <i class="fa-solid fa-check"></i>
-                Sass
-              </li>
+              {development.map((item) => (
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  {item.title}
+                </li>
+              ))}
             </ul>
           </div>
         </div>
-        <div className="second">rr</div>
-        <div className="third">ss</div>
+        <div className="second">
+          <div className="first-content">
+            <img src="assets/illustration.png" alt="web" />
+            <h2>Illustration</h2>
+            <ul>
+              {illustration.map((item) => (
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  {item.title}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+        <div className="third">
+          <div className="first-content">
+            <img src="assets/movie.png" alt="web" />
+            <h2>Production</h2>
+            <ul>
+              {production.map((item) => (
+                <li>
+                  <i class="fa-solid fa-check"></i>
+                  {item.title}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   );
