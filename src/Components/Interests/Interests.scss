@@ -2,17 +2,19 @@
 @import "../../SCSS/global.scss";
 
 .interests {
-  background-image: radial-gradient(#9ca3be, $secondary-color);
+  background-color: #2e3140;
   color: black;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
+  padding-bottom: 150px;
 
   h1 {
     z-index: 2;
-    margin-top: -50%;
-    font-size: 50px;
+    margin-top: -44%;
+    font-size: 30px;
+    font-weight: 300;
   }
 
   .arrow {
@@ -31,10 +33,11 @@
   }
 
   .slider {
-    height: 450px;
+    height: 350px;
     display: flex;
     position: absolute;
     left: 0;
+    transition: all 1s ease-out;
 
     .container {
       width: 100vw;
@@ -45,26 +48,79 @@
       .item {
         width: 800px;
         height: 100%;
-        background-color: white;
+        background-color: #4f536e;
         border-radius: 20px;
         display: flex;
         align-items: center;
-        // flex-direction: column;
 
         .left {
-          flex: 6;
+          flex: 4;
           height: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+
+          .leftContainer {
+            width: 90%;
+            h2 {
+              font-size: 20px;
+              font-weight: 500;
+              color: white;
+            }
+
+            p {
+              font-size: 13px;
+              text-align: justify;
+              margin-top: 10px;
+              color: white;
+            }
+          }
         }
 
         h2 {
           color: #000;
         }
+
+        p {
+          color: black;
+        }
         .right {
-          flex: 6;
+          flex: 8;
           height: 100%;
-          background-color: blue;
+          background-color: white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          overflow: hidden;
+
+          img {
+            width: 100%;
+            height: 100%;
+
+            margin-left: 10px;
+          }
         }
       }
     }
+  }
+  .custom-shape-divider-bottom-1668258696 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+  }
+
+  .custom-shape-divider-bottom-1668258696 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 150px;
+  }
+
+  .custom-shape-divider-bottom-1668258696 .shape-fill {
+    fill: #ffffff;
   }
 }

@@ -7,7 +7,7 @@
 
   h1 {
     font-size: 30px;
-    margin-top: 20px;
+    margin-top: 50px;
     overflow-y: hidden;
     font-weight: 300;
   }
@@ -24,12 +24,11 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-
     padding: 20px;
 
     .item {
       width: 370px;
-      border-radius: 20px;
+      border-radius: 10px;
       border: 1px solid rgb(142, 142, 142);
       margin: 20px 10px;
       display: flex;
