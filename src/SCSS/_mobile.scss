@@ -1,3 +1,191 @@
+@media all and (max-width: 1280px) {
+  // .interests {
+  //   h1 {
+  //     margin-top: -75%;
+  //   }
+
+  //   .arrow {
+  //     &.left {
+  //       // left: 50px;
+  //     }
+  //     &.right {
+  //       // right: 50px;
+  //     }
+  //   }
+
+  //   .slider {
+  //     // margin-top: -30%;
+  //   }
+  // }
+}
+
+@media all and (max-width: 1366px) {
+  .banner {
+    .left {
+      overflow-y: hidden;
+      .img-content {
+        height: 450px;
+        width: 450px;
+        margin-top: 120px;
+      }
+    }
+    .right {
+      .titles {
+        margin-top: -50px;
+      }
+    }
+
+    .custom-shape-divider-bottom svg {
+      height: 50px;
+    }
+  }
+
+  .portfolio {
+    h1 {
+      margin: 10px 0px;
+    }
+
+    .container {
+      .item {
+        width: 300px;
+      }
+    }
+  }
+
+  .services {
+    .wrapper {
+      .first {
+        .first-content {
+          display: flex;
+          padding: 0;
+          padding-left: 50px;
+          padding-top: 20px;
+
+          flex-direction: column;
+          img {
+            width: 60px;
+          }
+        }
+      }
+      .second {
+        .first-content {
+          display: flex;
+          padding: 0;
+          padding-left: 50px;
+          padding-top: 20px;
+
+          flex-direction: column;
+          img {
+            width: 60px;
+          }
+        }
+      }
+
+      .third {
+        .first-content {
+          display: flex;
+          padding: 0;
+          padding-left: 50px;
+          padding-top: 20px;
+
+          flex-direction: column;
+          img {
+            width: 60px;
+          }
+        }
+      }
+    }
+  }
+
+  .interests {
+    .custom-shape-divider-bottom-1668258696 svg {
+      height: 50px;
+    }
+    .slider {
+      margin: 0;
+    }
+
+    .arrow {
+      margin: 0;
+    }
+  }
+}
+@media all and (max-width: 1024px) {
+  .banner {
+    .left {
+      .img-content {
+        height: 400px;
+        width: 400px;
+      }
+    }
+
+    .right {
+      .titles {
+        h1 {
+          font-size: 40px;
+        }
+
+        h3 {
+          font-size: 20px;
+        }
+      }
+      .buttons {
+        .btn {
+          width: 150px;
+          padding: 10px;
+        }
+      }
+
+      .socials {
+        .circle {
+          height: 45px;
+          width: 45px;
+
+          i {
+            font-size: 25px;
+          }
+        }
+      }
+    }
+  }
+  .about {
+    .about-content {
+      .right {
+        p {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    h1 {
+      margin: 25px 0px;
+    }
+
+    .container {
+      .item {
+        width: 200px;
+      }
+    }
+  }
+
+  .interests {
+    .slider {
+      margin: 0; //!interest title nowhere to be seen
+    }
+
+    .arrow {
+      margin: 0;
+      &.left {
+        left: 30px;
+      }
+      &.right {
+        right: 30px;
+      }
+    }
+  }
+}
 @media all and (max-width: 1000px) {
   .banner {
     display: flex;
@@ -17,7 +205,7 @@
 
     .right {
       .titles {
-        margin-top: 20px;
+        margin-top: -250px;
 
         h1 {
           font-size: 40px;
@@ -45,30 +233,37 @@
         }
       }
     }
-
-    .about {
-      display: none;
-      .about-content {
-        .left {
-          .img {
-            img {
-              width: 120%;
-            }
+  }
+  .about {
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      .left {
+        .img {
+          img {
+            width: 110%;
           }
         }
-
-        .right {
-        }
       }
-    }
 
-    .custom-shape-divider-bottom svg {
-      height: 100px;
+      .right {
+        padding: 0px 50px;
+      }
     }
   }
 }
 
-@media all and (max-width: 867px) {
+@media all and (max-width: 800px) {
+  .services {
+    display: flex;
+    flex-direction: column;
+    .wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+  }
 }
 
 @media all and (max-width: 595px) {

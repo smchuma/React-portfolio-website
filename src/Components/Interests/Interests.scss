@@ -12,15 +12,18 @@
 
   h1 {
     z-index: 2;
-    margin-top: -44%;
+    margin-top: -48%;
     font-size: 30px;
     font-weight: 300;
   }
 
   .arrow {
     height: 50px;
+    display: flex;
+    margin-top: -15%;
     position: absolute;
     cursor: pointer;
+    display: flex;
 
     &.left {
       left: 100px;
@@ -33,11 +36,12 @@
   }
 
   .slider {
-    height: 350px;
+    height: 320px;
     display: flex;
     position: absolute;
     left: 0;
     transition: all 1s ease-out;
+    margin-top: -15%;
 
     .container {
       width: 100vw;
@@ -110,10 +114,12 @@
     position: relative;
     display: block;
     width: calc(100% + 1.3px);
-    height: 150px;
+    height: 200px;
   }
 
   .custom-shape-divider-bottom-1668258696 .shape-fill {
     fill: #ffffff;
   }
 }
+
+@import "../../SCSS/mobile";
