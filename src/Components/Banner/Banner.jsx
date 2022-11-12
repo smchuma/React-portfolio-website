@@ -5,23 +5,6 @@ const Banner = () => {
   return (
     <div className="banner" id="banner">
       <div className="left">
-        <div className="socials">
-          <div className="circle">
-            <a href="https://www.linkedin.com/in/samora-mchuma/" target="blank">
-              <i className="fa-brands fa-linkedin-in"></i>
-            </a>
-          </div>
-          <div className="circle">
-            <a href="https://github.com/smchuma" target="blank">
-              <i className="fa-brands fa-github"></i>
-            </a>
-          </div>
-          <div className="circle">
-            <a href="https://www.instagram.com/samora_mchuma/" target="blank">
-              <i className="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-        </div>
         <div className="img-content">
           <div className="img-content-background"></div>
         </div>
@@ -55,12 +38,29 @@ const Banner = () => {
           </h3>
         </div>
         <div className="buttons">
-          <a href="cv.pdf" download="braCKY.pdf">
+          <a href="cv.pdf" download="Samora Mchuma CV.pdf">
             <button className="btn">Download CV</button>
           </a>
           <a href="#contact">
             <button className="btn">Contact Me</button>
           </a>
+        </div>
+        <div className="socials">
+          <div className="circle">
+            <a href="https://www.linkedin.com/in/samora-mchuma/" target="blank">
+              <i className="fa-brands fa-linkedin-in"></i>
+            </a>
+          </div>
+          <div className="circle">
+            <a href="https://github.com/smchuma" target="blank">
+              <i className="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div className="circle">
+            <a href="https://www.instagram.com/samora_mchuma/" target="blank">
+              <i className="fa-brands fa-instagram"></i>
+            </a>
+          </div>
         </div>
       </div>
       <div className="custom-shape-divider-bottom">
