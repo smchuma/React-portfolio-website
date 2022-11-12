@@ -1,13 +1,14 @@
 @import "../../SCSS/global.scss";
 .portfolio {
-  background-color: $secondary-color;
+  background-color: #2e3140;
   display: flex;
   flex-direction: column;
   align-items: center;
 
   h1 {
-    font-size: 50px;
-    margin-top: 50px;
+    font-size: 30px;
+    margin-top: 20px;
+    overflow-y: hidden;
   }
 
   ul {
@@ -18,7 +19,7 @@
   }
 
   .container {
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -26,7 +27,7 @@
     padding: 20px;
 
     .item {
-      width: 320px;
+      width: 370px;
       border-radius: 20px;
       border: 1px solid rgb(142, 142, 142);
       margin: 20px 10px;
