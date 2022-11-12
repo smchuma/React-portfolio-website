@@ -63,13 +63,13 @@
           .leftContainer {
             width: 90%;
             h2 {
-              font-size: 20px;
+              font-size: 25px;
               font-weight: 500;
               color: white;
             }
 
             p {
-              font-size: 13px;
+              font-size: 15px;
               text-align: justify;
               margin-top: 10px;
               color: white;
@@ -77,13 +77,6 @@
           }
         }
 
-        h2 {
-          color: #000;
-        }
-
-        p {
-          color: black;
-        }
         .right {
           flex: 8;
           height: 100%;

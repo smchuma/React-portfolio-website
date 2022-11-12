@@ -1,8 +1,78 @@
 @import "../../SCSS/global.scss";
 .contact {
   background-color: white;
-  color: black;
   display: flex;
-  align-items: center;
-  justify-content: center;
+
+  .left {
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    img {
+      height: 100%;
+    }
+  }
+  .right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h2 {
+      color: black;
+      font-size: 30px;
+    }
+
+    form {
+      width: 70%;
+      height: 70%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+
+      input {
+        width: 400px;
+        height: 50px;
+        font-size: 14px;
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        outline: none;
+        color: black;
+      }
+
+      textarea {
+        width: 400px;
+        height: 300px;
+        font-size: 14px;
+        padding: 10px;
+        color: black;
+        border-radius: 5px;
+      }
+      button {
+        width: 150px;
+        height: 35px;
+        color: rgb(0, 0, 0);
+        margin-top: 10px;
+        border: 1px solid rgb(0, 0, 0);
+        font-weight: 500;
+        border-radius: 20px;
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+        background-color: #c6cbf0;
+
+        &:hover {
+          background-color: rgb(0, 0, 0);
+          color: white;
+        }
+      }
+      span {
+        color: green;
+      }
+    }
+  }
 }
