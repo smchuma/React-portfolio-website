@@ -11,7 +11,7 @@
     align-items: center;
 
     img {
-      height: 100%;
+      width: 100%;
     }
   }
   .right {
@@ -27,7 +27,6 @@
     }
 
     form {
-      width: 70%;
       height: 70%;
       display: flex;
       align-items: center;
@@ -76,3 +75,5 @@
     }
   }
 }
+
+@import "../../SCSS/mobile";

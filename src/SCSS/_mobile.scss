@@ -1,24 +1,3 @@
-@media all and (max-width: 1280px) {
-  // .interests {
-  //   h1 {
-  //     margin-top: -75%;
-  //   }
-
-  //   .arrow {
-  //     &.left {
-  //       // left: 50px;
-  //     }
-  //     &.right {
-  //       // right: 50px;
-  //     }
-  //   }
-
-  //   .slider {
-  //     // margin-top: -30%;
-  //   }
-  // }
-}
-
 @media all and (max-width: 1366px) {
   .banner {
     .left {
@@ -35,16 +14,16 @@
       }
     }
 
+    .custom-shape-divider-bottom {
+      width: 110%;
+    }
+
     .custom-shape-divider-bottom svg {
-      height: 50px;
+      height: 100px;
     }
   }
 
   .portfolio {
-    h1 {
-      margin: 10px 0px;
-    }
-
     .container {
       .item {
         width: 300px;
@@ -101,12 +80,13 @@
     .custom-shape-divider-bottom-1668258696 svg {
       height: 50px;
     }
-    .slider {
-      margin: 0;
-    }
+  }
 
-    .arrow {
-      margin: 0;
+  .contact {
+    .left {
+      img {
+        width: 80%;
+      }
     }
   }
 }
@@ -147,6 +127,13 @@
         }
       }
     }
+    .custom-shape-divider-bottom {
+      width: 100%;
+    }
+
+    .custom-shape-divider-bottom svg {
+      height: 80px;
+    }
   }
   .about {
     .about-content {
@@ -170,18 +157,76 @@
     }
   }
 
-  .interests {
-    .slider {
-      margin: 0; //!interest title nowhere to be seen
-    }
+  .services {
+    .wrapper {
+      .first {
+        .first-content {
+          padding-top: 10px;
 
-    .arrow {
-      margin: 0;
-      &.left {
-        left: 30px;
+          h2 {
+            font-size: 18px;
+          }
+
+          ul {
+            li {
+              font-size: 15px;
+            }
+          }
+
+          img {
+            width: 50px;
+          }
+        }
       }
-      &.right {
-        right: 30px;
+      .second {
+        .first-content {
+          padding-top: 10px;
+
+          h2 {
+            font-size: 18px;
+          }
+
+          ul {
+            li {
+              font-size: 15px;
+            }
+          }
+
+          img {
+            width: 50px;
+          }
+        }
+      }
+
+      .third {
+        .first-content {
+          padding-top: 10px;
+
+          h2 {
+            font-size: 18px;
+          }
+
+          ul {
+            li {
+              font-size: 15px;
+            }
+          }
+
+          img {
+            width: 50px;
+          }
+        }
+      }
+    }
+  }
+  .interests {
+    .interests-content {
+      .content {
+        .right {
+          p {
+            font-size: 8px;
+          }
+        }
       }
     }
   }
@@ -193,8 +238,8 @@
     .left {
       .img-content {
         margin: 0;
-        height: 400px;
-        width: 400px;
+        height: 550px;
+        width: 550px;
 
         .img-content-background {
           height: 90%;
@@ -204,34 +249,40 @@
     }
 
     .right {
+      justify-content: flex-start;
       .titles {
-        margin-top: -250px;
-
         h1 {
-          font-size: 40px;
+          font-size: 50px;
         }
 
         h3 {
-          font-size: 20px;
+          font-size: 30px;
         }
       }
       .buttons {
         .btn {
-          width: 150px;
+          width: 200px;
           padding: 10px;
         }
       }
 
       .socials {
         .circle {
-          height: 45px;
-          width: 45px;
+          height: 50px;
+          width: 50px;
 
           i {
-            font-size: 25px;
+            font-size: 30px;
           }
         }
       }
+    }
+    .custom-shape-divider-bottom {
+      width: 120%;
+    }
+
+    .custom-shape-divider-bottom svg {
+      height: 250px;
     }
   }
   .about {
@@ -248,20 +299,305 @@
 
       .right {
         padding: 0px 50px;
+
+        p {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    h1 {
+      margin: 25px 0px;
+    }
+
+    .container {
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      flex-direction: column;
+      .item {
+        width: 400px;
+      }
+    }
+  }
+
+  .services {
+    .wrapper {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      .first {
+        overflow: hidden;
+        .first-content {
+          padding-top: 10px;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 150px;
+            height: 150px;
+          }
+
+          h2 {
+            font-size: 30px;
+          }
+
+          ul {
+            padding: 40px;
+          }
+        }
+      }
+      .second {
+        .first-content {
+          padding-top: 10px;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 150px;
+            height: 150px;
+          }
+
+          h2 {
+            font-size: 30px;
+          }
+
+          ul {
+            padding: 40px;
+          }
+        }
+      }
+
+      .third {
+        .first-content {
+          padding-top: 10px;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 150px;
+            height: 150px;
+          }
+
+          h2 {
+            font-size: 30px;
+          }
+
+          ul {
+            padding: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .interests {
+    .interests-content {
+      flex-direction: column;
+
+      width: 100%;
+      .content {
+        width: 80%;
+
+        height: 15vh;
+        overflow: hidden;
+
+        .right {
+          h2 {
+            font-size: 20px;
+            padding-bottom: 10px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    flex-direction: column;
+
+    .left {
+      img {
+        width: 40%;
+      }
+    }
+
+    .right {
+      flex: 1.5;
+
+      justify-content: flex-start;
+
+      form {
+        textarea {
+          height: 200px;
+        }
       }
     }
   }
 }
 
 @media all and (max-width: 800px) {
-  .services {
-    display: flex;
-    flex-direction: column;
-    .wrapper {
-      display: flex;
+  .banner {
+    .left {
+      .img-content {
+        height: 400px;
+        width: 400px;
+      }
+    }
+    .custom-shape-divider-bottom svg {
+      height: 120px;
+    }
+  }
+  .about {
+    .about-content {
+      .right {
+        padding: 0px 50px;
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+
+  .portfolio {
+    h1 {
+      margin: 25px 0px;
+    }
+
+    .container {
+      display: block;
       align-items: center;
-      justify-content: center;
       flex-direction: column;
+      .item {
+        width: 250px;
+      }
+    }
+  }
+
+  .services {
+    .wrapper {
+      flex-direction: column;
+      width: 100%;
+      margin: 0;
+      .first {
+        overflow: hidden;
+        .first-content {
+          padding-top: 10px;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 150px;
+            height: 150px;
+          }
+
+          h2 {
+            font-size: 30px;
+          }
+
+          ul {
+            padding: 40px;
+          }
+        }
+      }
+      .second {
+        .first-content {
+          padding-top: 10px;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 150px;
+            height: 150px;
+          }
+
+          h2 {
+            font-size: 30px;
+          }
+
+          ul {
+            padding: 40px;
+          }
+        }
+      }
+
+      .third {
+        .first-content {
+          padding-top: 10px;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+
+          img {
+            width: 150px;
+            height: 150px;
+          }
+
+          h2 {
+            font-size: 30px;
+          }
+
+          ul {
+            padding: 40px;
+          }
+        }
+      }
+    }
+  }
+
+  .interests {
+    .interests-content {
+      flex-direction: column;
+
+      width: 100%;
+      .content {
+        width: 80%;
+
+        height: 15vh;
+        overflow: hidden;
+
+        .right {
+          h2 {
+            font-size: 20px;
+            padding-bottom: 10px;
+          }
+          p {
+            font-size: 15px;
+          }
+        }
+      }
+    }
+  }
+
+  .contact {
+    flex-direction: column;
+
+    .left {
+      img {
+        width: 40%;
+      }
+    }
+
+    .right {
+      flex: 1.5;
+
+      justify-content: flex-start;
+
+      form {
+        textarea {
+          height: 200px;
+        }
+      }
     }
   }
 }

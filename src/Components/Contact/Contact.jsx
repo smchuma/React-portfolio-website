@@ -11,10 +11,10 @@ const Contact = () => {
   return (
     <div className="contact" id="contact">
       <div className="left">
-        <img src="assets/shake.svg" alt="shake" />
+        <img src="assets/contact2.png" alt="shake" />
       </div>
       <div className="right">
-        <h2>Contact</h2>
+        <h2>Get in touch</h2>
         <form onSubmit={handleSubmit}>
           <input type="text" placeholder="Email" />
           <textarea placeholder="message"></textarea>

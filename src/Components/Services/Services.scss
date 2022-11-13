@@ -18,7 +18,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
     margin: auto;
     margin-top: 10px;
     width: 90%;
@@ -27,6 +26,7 @@
     .first {
       flex: 3;
       height: 70vh;
+      width: 100%;
       color: black;
       background-color: #252734;
       border-radius: 15px;

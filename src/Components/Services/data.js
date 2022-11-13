@@ -19,14 +19,7 @@ export const development = [
     id: 5,
     title: " Material UI",
   },
-  {
-    id: 6,
-    title: "MySQL",
-  },
-  {
-    id: 7,
-    title: "MongoDB",
-  },
+
   {
     id: 8,
     title: "Sass",
