@@ -20,7 +20,7 @@ export const interests = [
 
   {
     id: 14,
-    title: "Tripe",
+    title: "Tripe ( Matumbo )",
     desc: "I love tripe; it is one of my favorite foods. I could eat it every day. I'm obsessed",
     img: "https://kenyankitchen.co.ke/wp-content/uploads/2015/11/MATUMBO-STEW.jpg",
   },
