@@ -1,59 +1,61 @@
 @import "../../SCSS/global.scss";
 .portfolio {
   background-color: #2e3140;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-
   h1 {
     font-size: 30px;
     margin-top: 50px;
-    overflow-y: hidden;
     font-weight: 300;
-  }
-
-  ul {
-    margin: 10px;
-    padding: 0;
-    list-style: none;
-    display: flex;
+    text-align: center;
   }
 
   .container {
-    width: 100%;
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 20px;
+    margin-top: 10px;
 
-    .item {
-      width: 370px;
-      border-radius: 10px;
-      margin: 20px 10px;
+    .card {
+      background-color: #252734;
+      width: 500px;
+      height: 300px;
+      margin: 10px;
+      border-radius: 20px;
       display: flex;
+      position: relative;
       align-items: center;
       justify-content: center;
-      position: relative;
       cursor: pointer;
+      border: 1px solid #51546c;
+      transition: all 1s ease-in-out;
+      box-shadow: 0 0 10px 0 #51546c;
+
+      .card-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: top;
+        z-index: 1;
+      }
 
       h3 {
         position: absolute;
-        font-size: 15px;
-        margin-top: -50px;
+        font-size: 25px;
+        margin-top: -90px;
       }
 
       .buttons {
         position: absolute;
+        display: flex;
         bottom: 80px;
+        margin-bottom: 40px;
 
         button {
-          width: 100px;
+          width: 150px;
           background: transparent;
           color: white;
           border: 1px solid white;
           border-radius: 20px;
-          padding: 7px;
+          padding: 10px;
           cursor: pointer;
           font-size: 10px;
           font-weight: 500;
@@ -65,13 +67,6 @@
             color: black;
           }
         }
-      }
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        z-index: 1;
-        transition: all 0.5s ease;
       }
       &:hover {
         background-color: black;

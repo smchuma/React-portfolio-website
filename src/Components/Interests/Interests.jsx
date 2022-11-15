@@ -6,20 +6,18 @@ const Interests = () => {
   return (
     <div className="interests" id="interests">
       <h1>Interests</h1>
-      <div className="interests-content">
-        {interests.map((interest) => (
-          <div className="content" key={interest.id}>
-            <div className="left">
-              <img src={interest.img} alt={interest.title} />
+      <div className="container">
+        {interests.map((card) => (
+          <div className="card" key={card.id}>
+            <div className="card-image">
+              <img src={card.img} alt={card.title} />
             </div>
-            <div className="right">
-              <h2>{interest.title}</h2>
-              <p>{interest.desc}</p>
-            </div>
+            <h2>{card.title}</h2>
+            <p>{card.desc}</p>
           </div>
         ))}
       </div>
-      <div class="custom-shape-divider-bottom-1668258696">
+      <div class="custom-shape-divider-bottom">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
