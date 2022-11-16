@@ -8,7 +8,7 @@ export const interests = [
   {
     id: 12,
     title: "Akuas Studios",
-    desc: "I enjoy watching movies, particularly Marvel films. I prefer science fiction. Time travel, superpowers, you name it. I enjoy watching them.",
+    desc: "I do production services such as video editing, graphic design, motion graphic and more. I have been doing it for 10 year now. I upload a lot of my work on my YouTube channel Akuas Studios. ",
     img: "assets/akuas2.jpg",
   },
   {

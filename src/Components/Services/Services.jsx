@@ -17,8 +17,8 @@ const Services = () => {
             <h2>Development</h2>
             <ul>
               {development.map((item) => (
-                <li>
-                  <i class="fa-solid fa-check"></i>
+                <li key={item.id}>
+                  <i className="fa-solid fa-check"></i>
                   {item.title}
                 </li>
               ))}
@@ -31,8 +31,8 @@ const Services = () => {
             <h2>Illustration</h2>
             <ul>
               {illustration.map((item) => (
-                <li>
-                  <i class="fa-solid fa-check"></i>
+                <li key={item.id}>
+                  <i className="fa-solid fa-check"></i>
                   {item.title}
                 </li>
               ))}
@@ -45,8 +45,8 @@ const Services = () => {
             <h2>Production</h2>
             <ul>
               {production.map((item) => (
-                <li>
-                  <i class="fa-solid fa-check"></i>
+                <li key={item.id}>
+                  <i className="fa-solid fa-check"></i>
                   {item.title}
                 </li>
               ))}
