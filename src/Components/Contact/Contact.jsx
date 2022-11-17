@@ -33,7 +33,7 @@ const Contact = () => {
         <img src="assets/contact2.png" alt="shake" />
       </div>
       <div className="right">
-        <h2>Get in touch with Maya</h2>
+        <h2>Get in touch</h2>
         <form ref={form} onSubmit={sendEmail}>
           <input type="text" name="user_name" placeholder="Name" />
 
