@@ -1,25 +1,46 @@
-import React, { useState } from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 import "./Contact.scss";
 
 const Contact = () => {
-  const [message, setMessage] = useState(false);
+  const form = useRef();
 
-  const handleSubmit = (e) => {
+  const sendEmail = (e) => {
     e.preventDefault();
-    setMessage(true);
+
+    emailjs
+      .sendForm(
+        "service_wenwent",
+        "template_r4n7lw6",
+        form.current,
+        "y6eomlyE_s3p8eJs8"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          console.log("message sent");
+          e.target.reset();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
+
   return (
     <div className="contact" id="contact">
       <div className="left">
         <img src="assets/contact2.png" alt="shake" />
       </div>
       <div className="right">
-        <h2>Get in touch</h2>
-        <form onSubmit={handleSubmit}>
-          <input type="text" placeholder="Email" />
-          <textarea placeholder="message"></textarea>
-          <button type="submit">Send</button>
-          {message && <span>Thanks, I will get back to you ASAP :)</span>}
+        <h2>Get in touch with Maya</h2>
+        <form ref={form} onSubmit={sendEmail}>
+          <input type="text" name="user_name" placeholder="Name" />
+
+          <input type="email" name="user_email" placeholder="Email" />
+
+          <textarea name="message" placeholder="Message" />
+          <input type="submit" value="Send" />
         </form>
       </div>
     </div>
