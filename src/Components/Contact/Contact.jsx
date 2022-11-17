@@ -41,7 +41,7 @@ const Contact = () => {
           <input type="email" name="user_email" placeholder="Email" required />
 
           <textarea name="message" placeholder="Message" required />
-          <input type="submit" value="Send" />
+          <button type="submit">Send</button>
         </form>
         <ToastContainer
           position="top-right"

@@ -1,6 +1,8 @@
 @media all and (max-width: 1280px) {
   .banner {
     .left {
+      overflow: hidden;
+
       .img-content {
         margin-top: 50px;
         height: 480px;
@@ -579,6 +581,20 @@
       .card {
         width: 300px;
         height: 200px;
+
+        h3 {
+          font-size: 15px;
+          margin-top: -50px;
+        }
+
+        .buttons {
+          bottom: 60px;
+          margin: 0;
+          button {
+            width: 100px;
+            padding: 5px;
+          }
+        }
       }
     }
   }
@@ -736,10 +752,17 @@
   .contact {
     .right {
       form {
-        height: 50%;
+        height: 50vh;
+        padding: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: space-between;
 
         input {
           margin-bottom: 10px;
+        }
+        button {
+          height: 50px;
         }
       }
     }
@@ -947,11 +970,11 @@
 
   .about {
     .about-content {
-      margin: 10px;
+      margin-bottom: 50px;
       .right {
-        padding: 0 10px;
-        p {
+        padding: 0 p {
           font-size: 14px;
+          margin: 0;
           padding: 10px 0;
         }
       }
@@ -962,6 +985,14 @@
       .card {
         width: 250px;
         height: 150px;
+
+        .buttons {
+          bottom: 40px;
+          button {
+            width: 80px;
+            padding: 5px;
+          }
+        }
       }
     }
   }
@@ -981,6 +1012,18 @@
       .left {
         .logo {
           font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .banner {
+    .right {
+      .buttons {
+        .btn {
+          width: 120px;
+          margin-left: 10px;
+          padding: 5px;
         }
       }
     }
