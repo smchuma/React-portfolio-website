@@ -2,6 +2,10 @@
 .about {
   background-color: white;
   padding-top: 30px;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h1 {
     color: black;
@@ -11,39 +15,57 @@
     font-weight: 300;
   }
 
-  .about-content {
+  .about-container {
+    width: 85%;
+    min-height: 50vh;
+    background-color: white;
     display: flex;
-    margin: 20px 50px;
-    border: 1px solid black;
-    padding: 10px;
+    justify-content: center;
+    align-items: center;
     box-shadow: 1px 5px 18px #1a1c23;
+    padding: 20px;
+    border-radius: 5px;
 
-    p {
-      color: black;
-    }
-
-    .left {
-      flex: 0.5;
+    .image-container {
+      flex: 1;
       display: flex;
       align-items: center;
       justify-content: center;
-
-      .img {
-        img {
-          width: 100%;
-        }
+      img {
+        width: 500px;
+        height: 400px;
+        object-fit: cover;
       }
     }
-    .right {
-      flex: 0.5;
+    .text-container {
+      flex: 1;
+      justify-content: center;
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: center;
-
       p {
-        padding: 5px 20px;
+        color: black;
+        font-size: 16px;
+        padding-bottom: 10px;
         text-align: justify;
+      }
+
+      .btn {
+        width: 150px;
+        color: rgb(255, 255, 255);
+        background-color: #3c3d42;
+        border: 1px solid rgb(0, 0, 0);
+        padding: 10px;
+        border-radius: 20px;
+        transition: all 1s ease-in-out;
+        cursor: pointer;
+        margin-bottom: 10px;
+        outline: none;
+
+        &:hover {
+          background-color: transparent;
+          color: rgb(0, 0, 0);
+        }
       }
     }
   }

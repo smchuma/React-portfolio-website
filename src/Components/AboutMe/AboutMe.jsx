@@ -5,16 +5,14 @@ const AboutMe = () => {
   return (
     <div className="about" id="about">
       <h1>About Me</h1>
-      <div className="about-content">
-        <div className="left">
-          <div className="img">
-            <img
-              src="https://miro.medium.com/max/828/1*IRGHmiGsa16stedQvIaZfw.gif"
-              alt="gif"
-            />
-          </div>
+      <div className="about-container">
+        <div className="image-container">
+          <img
+            src="https://miro.medium.com/max/828/1*IRGHmiGsa16stedQvIaZfw.gif"
+            alt="gif"
+          />
         </div>
-        <div className="right">
+        <div className="text-container">
           <p>
             I have a bachelor’s degree in information systems technology from
             United States International University-Africa and have more than 2
@@ -29,6 +27,9 @@ const AboutMe = () => {
             where users can watch YouTube videos. These projects have helped me
             improve my programming skills immensely.
           </p>
+          <a href="#contact">
+            <button className="btn">Hire Me</button>
+          </a>
         </div>
       </div>
     </div>
