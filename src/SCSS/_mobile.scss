@@ -109,17 +109,6 @@
     }
   }
 
-  .portfolio {
-    .container {
-      margin-bottom: 20px;
-      .card {
-        margin-bottom: 20px;
-
-        width: 400px;
-        height: 300px;
-      }
-    }
-  }
   .services {
     h1 {
       padding-bottom: 20px;
@@ -260,15 +249,6 @@
           font-size: 22px;
           padding: 10px;
         }
-      }
-    }
-  }
-
-  .portfolio {
-    .container {
-      .card {
-        width: 500px;
-        height: 350px;
       }
     }
   }
@@ -532,14 +512,6 @@
     }
   }
 
-  .portfolio {
-    .container {
-      .card {
-        width: 450px;
-        height: 300px;
-      }
-    }
-  }
   .about {
     .about-content {
       .left {
@@ -625,28 +597,6 @@
 
         .btn {
           padding: 5px;
-        }
-      }
-    }
-  }
-  .portfolio {
-    .container {
-      .card {
-        width: 300px;
-        height: 200px;
-
-        h3 {
-          font-size: 15px;
-          margin-top: -50px;
-        }
-
-        .buttons {
-          bottom: 60px;
-          margin: 0;
-          button {
-            width: 100px;
-            padding: 5px;
-          }
         }
       }
     }
@@ -867,15 +817,6 @@
     }
   }
 
-  .portfolio {
-    .container {
-      .card {
-        width: 300px;
-        height: 200px;
-      }
-    }
-  }
-
   .services {
     h1 {
       padding-bottom: 20px;
@@ -1048,23 +989,6 @@
     }
   }
 
-  .portfolio {
-    .container {
-      .card {
-        width: 250px;
-        height: 150px;
-
-        .buttons {
-          bottom: 40px;
-          button {
-            width: 80px;
-            padding: 5px;
-          }
-        }
-      }
-    }
-  }
-
   .contact {
     .right {
       h2 {
@@ -1201,6 +1125,24 @@
         p {
           font-size: 11px;
           padding-bottom: 10px;
+        }
+      }
+    }
+  }
+  .portfolio {
+    .cards {
+      padding: 0;
+      .card {
+        .details {
+          h3 {
+            font-size: 15px;
+          }
+          .buttons {
+            button {
+              width: 80px;
+              padding: 8px;
+            }
+          }
         }
       }
     }

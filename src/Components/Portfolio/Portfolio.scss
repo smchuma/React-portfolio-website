@@ -1,6 +1,7 @@
 @import "../../SCSS/global.scss";
 .portfolio {
   background-color: #2e3140;
+
   h1 {
     font-size: 30px;
     margin-top: 50px;
@@ -8,49 +9,44 @@
     text-align: center;
   }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top: 10px;
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 20px;
+    grid-gap: 20px;
+    margin-bottom: 10px;
+    padding-right: 20px;
 
     .card {
       background-color: #252734;
-      width: 500px;
-      height: 300px;
-      margin: 10px;
-      border-radius: 20px;
-      display: flex;
-      position: relative;
-      align-items: center;
-      justify-content: center;
-      cursor: pointer;
       border: 1px solid #51546c;
-      transition: all 1s ease-in-out;
       box-shadow: 0 0 10px 0 #51546c;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+      transition: all 1s ease-in-out;
+      cursor: pointer;
+      .container {
+        position: relative;
+        clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
 
-      .card-image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        object-position: top;
-        z-index: 1;
+        img {
+          width: 100%;
+          display: block;
+          border-radius: 20px 20px 0 0;
+        }
       }
+      .details {
+        padding-left: 10px;
+        padding-bottom: 20px;
 
-      h3 {
-        position: absolute;
-        font-size: 25px;
-        margin-top: -90px;
-      }
-
-      .buttons {
-        position: absolute;
-        display: flex;
-        bottom: 80px;
-        margin-bottom: 40px;
+        h3 {
+          font-size: 20px;
+          font-weight: 300;
+          margin: 10px;
+        }
 
         button {
-          width: 150px;
+          width: 110px;
           background: transparent;
           color: white;
           border: 1px solid white;
@@ -69,11 +65,7 @@
         }
       }
       &:hover {
-        background-color: black;
-        img {
-          opacity: 0.2;
-          z-index: 0;
-        }
+        background-color: #101116;
       }
     }
   }
