@@ -12,39 +12,27 @@
     text-align: center;
   }
 
-  .container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    padding: 10px;
+    grid-gap: 50px;
+    padding-bottom: 50px;
+    max-width: 1100px;
+    margin: auto;
+    padding-bottom: 150px;
 
     .card {
       background-color: #252734;
-      width: 500px;
-      height: 310px;
-      margin: 20px;
-      border-radius: 10px;
-      transition: 1s ease-in-out;
+      border: 1px solid #51546c;
+      box-shadow: 0 0 10px 0 #51546c;
+      border-radius: 20px;
+      box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+      transition: all 1s ease-in-out;
       cursor: pointer;
-      box-shadow: 1px 1px 12px #37383f;
-
-      h2 {
-        text-align: center;
-        font-size: 20px;
-        font-weight: 300;
-      }
-
-      p {
-        text-align: justify;
-        padding: 10px 20px;
-        color: #a1a8cd;
-        font-size: 15px;
-        opacity: 0.8;
-      }
-
-      .card-image {
+      .imgBox {
         background-color: #4f536b;
-        height: 150px;
-        margin-bottom: 15px;
+        max-height: 200px;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -55,33 +43,34 @@
           transition: 1s ease-in-out;
         }
       }
+      .content {
+        h2 {
+          text-align: center;
+          padding: 30px;
+          font-size: 20px;
+          font-weight: 300;
+        }
+
+        p {
+          padding: 0px 15px;
+          padding-bottom: 15px;
+          text-align: justify;
+          color: #a1a8cd;
+          transition: 1s ease-in-out;
+          font-size: 15px;
+        }
+      }
       &:hover {
+        background-color: #343748;
         img {
           transform: scale(1.1);
         }
+
+        p {
+          color: white;
+        }
       }
     }
-  }
-
-  .custom-shape-divider-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-  }
-
-  .custom-shape-divider-bottom svg {
-    position: relative;
-    display: block;
-    width: calc(100% + 1.3px);
-    height: 200px;
-  }
-
-  .custom-shape-divider-bottom .shape-fill {
-    fill: #ffffff;
   }
 }
 

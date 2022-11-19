@@ -24,6 +24,18 @@ export const development = [
     id: 8,
     title: "Sass",
   },
+  {
+    id: 9,
+    title: "SQL Experience",
+  },
+  {
+    id: 10,
+    title: "MongoDB / Mongoose",
+  },
+  {
+    id: 11,
+    title: "MYSQL",
+  },
 ];
 
 export const illustration = [
