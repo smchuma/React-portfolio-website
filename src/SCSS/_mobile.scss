@@ -5,8 +5,8 @@
 
       .img-content {
         margin-top: 50px;
-        height: 480px;
-        width: 480px;
+        height: 450px;
+        width: 450px;
       }
     }
 
@@ -19,23 +19,6 @@
     }
   }
 
-  .interests {
-    .custom-shape-divider-bottom svg {
-      height: 0px;
-    }
-
-    .container {
-      .card {
-        width: 350px;
-        height: 280px;
-
-        .card-image {
-          height: 100px;
-        }
-      }
-    }
-  }
-
   .contact {
     .right {
       padding-top: 50px;
@@ -44,66 +27,13 @@
 }
 
 @media all and (max-width: 1024px) {
-  .banner {
-    .left {
-      overflow: hidden;
-
-      .img-content {
-        margin-bottom: 100px;
-        height: 350px;
-        width: 350px;
-      }
-    }
-
-    .right {
-      .titles {
-        margin: 0px;
-        h1 {
-          font-size: 45px;
-        }
-
-        h3 {
-          font-size: 20px;
-        }
-      }
-      .buttons {
-        .btn {
-          width: 150px;
-          padding: 12px;
-        }
-      }
-
-      .socials {
-        .circle {
-          height: 40px;
-          width: 40px;
-
-          i {
-            font-size: 20px;
-            padding-top: 10px;
-          }
-        }
-      }
-    }
-    .custom-shape-divider-bottom {
-      width: 120%;
-    }
-
-    .custom-shape-divider-bottom svg {
-      height: 0px;
-    }
-  }
   .about {
-    .about-container {
-      .image-container {
-        img {
-          width: 400px;
-          height: 300px;
-        }
-      }
-      .text-container {
-        p {
-          font-size: 15px;
+    .container {
+      .item {
+        .text {
+          p {
+            font-size: 15px;
+          }
         }
       }
     }
@@ -117,8 +47,8 @@
     .left {
       .img-content {
         margin: 0;
-        height: 550px;
-        width: 550px;
+        height: 350px;
+        width: 350px;
 
         .img-content-background {
           height: 90%;
@@ -132,16 +62,17 @@
       .titles {
         margin-top: 20px;
         h1 {
-          font-size: 50px;
+          font-size: 40px;
         }
 
         h3 {
-          font-size: 30px;
+          font-size: 20px;
         }
       }
       .buttons {
+        margin-top: 15px;
         .btn {
-          width: 200px;
+          width: 150px;
           padding: 10px;
         }
       }
@@ -157,30 +88,19 @@
         }
       }
     }
-    .custom-shape-divider-bottom {
-      width: 120%;
-    }
-
     .custom-shape-divider-bottom svg {
-      height: 250px;
+      height: 55px;
     }
   }
   .about {
-    .about-container {
-      flex-direction: column;
-      margin-top: 20px;
-      height: 70vh;
-
-      .image-container {
-        img {
-          width: 500px;
-          height: 400px;
-        }
-      }
-      .text-container {
-        p {
-          font-size: 22px;
-          padding: 10px;
+    .container {
+      margin-bottom: 50px;
+      .item {
+        flex-direction: column;
+        .text {
+          p {
+            font-size: 17px;
+          }
         }
       }
     }
@@ -209,67 +129,12 @@
   }
 }
 
-@media all and (max-width: 900px) {
-  .banner {
-    .left {
-      .img-content {
-        height: 490px;
-        width: 490px;
-      }
-    }
-    .custom-shape-divider-bottom svg {
-      height: 150px;
-    }
-  }
-
-  .about {
-    .about-container {
-      .image-container {
-        img {
-          width: 450px;
-          height: 350px;
-        }
-      }
-      .text-container {
-        p {
-          padding: 15px;
-          font-size: 18px;
-        }
-      }
-    }
-  }
-}
-
 @media all and (max-width: 800px) {
   .banner {
-    .left {
-      .img-content {
-        height: 400px;
-        width: 400px;
-      }
-    }
     .custom-shape-divider-bottom svg {
-      height: 100px;
+      height: 50px;
     }
   }
-
-  .about {
-    .about-container {
-      .image-container {
-        img {
-          width: 400px;
-          height: 300px;
-        }
-      }
-      .text-container {
-        p {
-          padding: 10px;
-          font-size: 15px;
-        }
-      }
-    }
-  }
-
   .contact {
     flex-direction: column;
 
@@ -314,74 +179,6 @@
 }
 
 @media all and (max-width: 595px) {
-  .banner {
-    .left {
-      .img-content {
-        height: 250px;
-        width: 250px;
-      }
-    }
-
-    .right {
-      flex: 0.7;
-      .titles {
-        margin-top: 10px;
-        h1 {
-          font-size: 35px;
-        }
-
-        h3 {
-          font-size: 20px;
-        }
-      }
-      .buttons {
-        margin-top: 20px;
-        .btn {
-          width: 150px;
-        }
-      }
-      .socials {
-        .circle {
-          width: 40px;
-          height: 40px;
-
-          i {
-            font-size: 20px;
-            padding-top: 10px;
-          }
-        }
-      }
-    }
-    .custom-shape-divider-bottom svg {
-      height: 70px;
-    }
-  }
-
-  .about {
-    .about-container {
-      width: 95%;
-      margin-top: 10px;
-      .image-container {
-        img {
-          width: 300px;
-          height: 150px;
-          object-fit: contain;
-        }
-      }
-      .text-container {
-        flex: 1.5;
-        p {
-          padding: 0px;
-          font-size: 14px;
-        }
-
-        .btn {
-          padding: 5px;
-        }
-      }
-    }
-  }
-
   .contact {
     flex-direction: column;
 
@@ -425,45 +222,11 @@
 }
 
 @media all and (max-width: 420px) {
-  .banner {
-    .custom-shape-divider-bottom {
-      width: 150%;
-    }
-
-    .custom-shape-divider-bottom svg {
-      height: 120px;
-    }
-  }
-
   .navbar {
     .wrapper {
       .left {
         .logo {
           font-size: 25px;
-        }
-      }
-    }
-  }
-
-  .about {
-    .about-container {
-      .image-container {
-        img {
-          width: 300px;
-          height: 150px;
-          object-fit: contain;
-        }
-      }
-      .text-container {
-        flex: 1.5;
-        p {
-          padding: 0px;
-          font-size: 14px;
-        }
-
-        .btn {
-          padding: 5px;
-          margin-top: 15px;
         }
       }
     }
@@ -492,45 +255,38 @@
   .banner {
     .left {
       .img-content {
-        height: 200px;
-        width: 200px;
+        height: 300px;
+        width: 300px;
       }
     }
-
     .right {
       .titles {
         h1 {
-          font-size: 27px;
-        }
-
-        h3 {
-          font-size: 18px;
+          font-size: 30px;
         }
       }
       .buttons {
+        display: flex;
+        flex-direction: column;
+
         .btn {
-          width: 120px;
-          padding: 8px;
+          margin-bottom: 10px;
+        }
+      }
+      .socials {
+        margin-top: 10px;
+        .circle {
+          height: 50px;
+          width: 50px;
+
+          i {
+            font-size: 30px;
+          }
         }
       }
     }
     .custom-shape-divider-bottom svg {
-      height: 50px;
-    }
-  }
-
-  .about {
-    .about-container {
-      .image-container {
-        display: none;
-      }
-
-      .text-container {
-        p {
-          font-size: 13px;
-          padding-bottom: 10px;
-        }
-      }
+      height: 20px;
     }
   }
 
@@ -543,7 +299,7 @@
   }
 }
 
-@media all and (max-width: 290px) {
+@media all and (max-width: 295px) {
   .navbar {
     .wrapper {
       .left {
@@ -555,12 +311,16 @@
   }
 
   .banner {
+    .left {
+      .img-content {
+        height: 250px;
+        width: 250px;
+      }
+    }
     .right {
-      .buttons {
-        .btn {
-          width: 120px;
-          margin-left: 10px;
-          padding: 5px;
+      .titles {
+        h1 {
+          font-size: 25px;
         }
       }
     }
