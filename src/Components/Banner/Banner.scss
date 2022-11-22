@@ -19,8 +19,7 @@
       border-radius: 50%;
       height: 500px;
       width: 500px;
-      margin: 0 0px 0 50px;
-      margin-bottom: 200px;
+      margin: 50px;
 
       .img-content-background {
         height: 92%;
@@ -43,11 +42,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     color: white;
     text-align: center;
 
     .titles {
-      margin-top: -150px;
       h2 {
         color: rgb(209, 255, 101);
       }
@@ -108,6 +107,7 @@
 
       i {
         font-size: 30px;
+        margin-top: 10px;
 
         &:hover {
           color: black;
@@ -128,7 +128,7 @@
     position: relative;
     display: block;
     width: calc(110% + 1.3px);
-    height: 158px;
+    height: 100px;
   }
 
   .custom-shape-divider-bottom .shape-fill {

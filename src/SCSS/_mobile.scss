@@ -1,21 +1,10 @@
-@media all and (max-width: 1280px) {
+@media all and (max-width: 1125px) {
   .banner {
     .left {
-      overflow: hidden;
-
       .img-content {
-        margin-top: 50px;
-        height: 450px;
         width: 450px;
+        height: 450px;
       }
-    }
-
-    .custom-shape-divider-bottom {
-      width: 110%;
-    }
-
-    .custom-shape-divider-bottom svg {
-      height: 120px;
     }
   }
 }
@@ -40,21 +29,14 @@
     flex-direction: column;
     .left {
       .img-content {
-        margin: 0;
-        height: 350px;
-        width: 350px;
-
-        .img-content-background {
-          height: 90%;
-          width: 90%;
-        }
+        height: 300px;
+        width: 300px;
       }
     }
 
     .right {
       justify-content: flex-start;
       .titles {
-        margin-top: 20px;
         h1 {
           font-size: 40px;
         }
@@ -70,20 +52,9 @@
           padding: 10px;
         }
       }
-
-      .socials {
-        .circle {
-          height: 50px;
-          width: 50px;
-
-          i {
-            font-size: 30px;
-          }
-        }
-      }
     }
     .custom-shape-divider-bottom svg {
-      height: 55px;
+      display: none;
     }
   }
   .about {
@@ -158,34 +129,6 @@
   }
 }
 
-@media all and (max-width: 800px) {
-  .banner {
-    .custom-shape-divider-bottom svg {
-      height: 50px;
-    }
-  }
-
-  .about {
-    .about-content {
-      .left {
-        .img {
-          img {
-            width: 100%;
-          }
-        }
-      }
-
-      .right {
-        padding: 0px 50px;
-
-        p {
-          font-size: 18px;
-        }
-      }
-    }
-  }
-}
-
 @media all and (max-width: 420px) {
   .navbar {
     .wrapper {
@@ -216,8 +159,8 @@
   .banner {
     .left {
       .img-content {
-        height: 300px;
-        width: 300px;
+        height: 250px;
+        width: 250px;
       }
     }
     .right {
@@ -227,27 +170,10 @@
         }
       }
       .buttons {
-        display: flex;
-        flex-direction: column;
-
         .btn {
-          margin-bottom: 10px;
+          width: 120px;
         }
       }
-      .socials {
-        margin-top: 10px;
-        .circle {
-          height: 50px;
-          width: 50px;
-
-          i {
-            font-size: 30px;
-          }
-        }
-      }
-    }
-    .custom-shape-divider-bottom svg {
-      height: 20px;
     }
   }
 
@@ -280,8 +206,8 @@
   .banner {
     .left {
       .img-content {
-        height: 250px;
-        width: 250px;
+        height: 200px;
+        width: 200px;
       }
     }
     .right {
@@ -289,6 +215,20 @@
         h1 {
           font-size: 25px;
         }
+
+        h3 {
+          font-size: 18px;
+        }
+      }
+      .buttons {
+        margin-top: 12px;
+        .btn {
+          width: 150px;
+          margin-top: 10px;
+        }
+      }
+      .socials {
+        margin: 20px;
       }
     }
   }
