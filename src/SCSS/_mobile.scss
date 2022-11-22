@@ -186,30 +186,6 @@
   }
 }
 
-@media all and (max-width: 595px) {
-  .contact {
-    flex-direction: column;
-
-    .left {
-      img {
-        width: 40%;
-      }
-    }
-
-    .right {
-      flex: 1.5;
-
-      justify-content: flex-start;
-
-      form {
-        textarea {
-          // height: 200px;
-        }
-      }
-    }
-  }
-}
-
 @media all and (max-width: 420px) {
   .navbar {
     .wrapper {
